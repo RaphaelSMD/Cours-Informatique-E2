@@ -12,7 +12,7 @@ def approximation_pi(n):
         terme = 4 / (d*(d+1)*(d+2))
         pi_approx += signe * terme
         print(f"Approximation {i+1} : {pi_approx}")
-        signe += -1
+        signe *= -1
 try :
     N=int(input("Entrer le nombre d'approximations voulues : "))
     approximation_pi(N)
