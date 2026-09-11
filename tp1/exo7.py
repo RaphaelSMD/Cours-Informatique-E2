@@ -16,4 +16,3 @@ def plaque_immatriculation():
             for j in range(2):
                 plaque += random.choice(lettres)
         print(plaque)
-plaque_immatriculation()

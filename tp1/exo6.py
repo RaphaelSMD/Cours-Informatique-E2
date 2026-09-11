@@ -24,4 +24,4 @@ def operation():
         print("Choix invalide. Veuillez choisir parmis a,s,m,d.")
 
     print(f"Le résultat de l'opération est : {nbr1} {choix} {nbr2} = {result}")
-operation()
+

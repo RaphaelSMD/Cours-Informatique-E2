@@ -13,8 +13,9 @@ def approximation_pi(n):
         pi_approx += signe * terme
         print(f"Approximation {i+1} : {pi_approx}")
         signe *= -1
-try :
-    N=int(input("Entrer le nombre d'approximations voulues : "))
-    approximation_pi(N)
-except ValueError :
-    print("Entrer un nombre entier positif.")
+if __name__ == "__main__":
+    try :
+        N=int(input("Entrer le nombre d'approximations voulues : "))
+        approximation_pi(N)
+    except ValueError :
+        print("Entrer un nombre entier positif.")

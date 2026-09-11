@@ -8,4 +8,3 @@ def âge():
         else:
             canin = 21 + (humain - 2) * 4
     print(f"L'équivalent en âge canine est : {canin}")
-âge()

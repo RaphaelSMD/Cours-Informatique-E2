@@ -10,4 +10,3 @@ def conversion():
             resultat = (str(r)+resultat)
             q=q//2
     print(f"Le nombre {nbr_decimal} en binaire est : {resultat}")
-conversion()

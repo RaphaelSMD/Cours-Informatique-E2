@@ -20,4 +20,3 @@ def rangement():
         print(f"Moyenne : {moyenne}")
     else :
         print("Aucun nombre valide n'a été saisi.")
-rangement()
