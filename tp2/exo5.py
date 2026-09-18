@@ -24,11 +24,36 @@ def affichage(pol):
 print(affichage(polynome))
 
 def destruction(po):
-    p=[]
-    return p
+    po.clear()
 print(destruction(polynome))
 
-def addition(pol1, pol2):
-    somme=sum(pol1,pol2)
-    return somme
-print(addition(poly, polynome))
+poly2=[5, 9, 6, 2]
+def addition(p1, p2):
+    p1_rev = p1[::-1]
+    p2_rev = p2[::-1]
+    
+    res = []
+    taille_max = max(len(p1), len(p2))
+    
+    for i in range(taille_max):
+        coeff1 = p1_rev[i] if i < len(p1) else 0
+        coeff2 = p2_rev[i] if i < len(p2) else 0
+        res.append(coeff1 + coeff2)
+        
+    res.reverse()
+    return res
+
+print("Poly 1 :", poly)
+print("Poly 2 :", poly2)
+somme = addition(poly, poly2)
+print("Somme des polynômes :", affichage(somme))
+
+def multiplication_monome(p, coeff, degre):
+    res = []
+    for c in p:
+        res.append(c * coeff)
+    for i in range(degre):
+        res.append(0)
+    return res
+p_multiplie = multiplication_monome(poly, 3, 2)
+print("Résultat :", affichage(p_multiplie))
