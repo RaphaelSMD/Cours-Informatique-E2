@@ -1,4 +1,4 @@
-import random
+import random 
 from tp3.exo4.exceptions import LettreDejaProposeeError
 
 fichier = open("dic.txt", "r", encoding="utf-8")
