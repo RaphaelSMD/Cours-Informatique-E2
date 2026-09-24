@@ -1,5 +1,5 @@
 import random 
-from tp3.exo4.exceptions import LettreDejaProposeeError
+from exceptions import LettreDejaProposeeErreur
 
 fichier = open("dic.txt", "r", encoding="utf-8")
 mots = fichier.readlines()
@@ -47,7 +47,7 @@ while vies > 0:
 
     try:
         if proposition in lettres_deja_jouees:
-            raise LettreDejaProposeeError()
+            raise LettreDejaProposeeErreur()
 
         lettres_deja_jouees.append(proposition)
         if proposition in mot_mystere:
@@ -56,7 +56,7 @@ while vies > 0:
             vies = vies - 1
             print("Raté ! La lettre n'est pas dans le mot.")
 
-    except LettreDejaProposeeError:
+    except LettreDejaProposeeErreur:
         print("Erreur : Vous avez déjà proposé cette lettre !")
 if vies == 0:
     print("\nDéfaite ! Vous n'avez plus de vie. Le mot était :", mot_mystere)
