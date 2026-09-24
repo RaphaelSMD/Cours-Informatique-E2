@@ -1,0 +1,2 @@
+class LettreDejaProposeeErreur(Exception):
+    pass
