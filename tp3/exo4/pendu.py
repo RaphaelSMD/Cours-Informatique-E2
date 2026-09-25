@@ -1,7 +1,9 @@
 import random 
 from exceptions import LettreDejaProposeeErreur
+from pathlib import Path
 
-fichier = open("dic.txt", "r", encoding="utf-8")
+dossier_script = Path(__file__).parent
+fichier = open(dossier_script / "dic.txt", "r", encoding="utf-8")
 mots = fichier.readlines()
 fichier.close()
 
