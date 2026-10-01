@@ -13,4 +13,4 @@ for i in range(n):
     product.code = random.randint(1000,9999)
     product.name = input("Saisissez le nom du produit : ")
     product.priceET = float(input("Saisissez le prix du produit : "))
-    print(f"{product.code} - {product.name} - {product.priceET}€ - {product.get_price_it()}€")
+    print(f"{product.code} - {product.name} - {product.get_price_it()}€")

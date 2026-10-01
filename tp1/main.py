@@ -1,4 +1,4 @@
-from exo1 import calculer_imc
+from tp4.exo1 import calculer_imc
 from exo2 import rangement
 from exo3 import âge
 from exo4 import approximation_pi
