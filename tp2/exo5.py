@@ -39,10 +39,8 @@ def addition(p1, p2):
         coeff1 = p1_rev[i] if i < len(p1) else 0
         coeff2 = p2_rev[i] if i < len(p2) else 0
         res.append(coeff1 + coeff2)
-        
     res.reverse()
     return res
-
 print("Poly 1 :", poly)
 print("Poly 2 :", poly2)
 somme = addition(poly, poly2)

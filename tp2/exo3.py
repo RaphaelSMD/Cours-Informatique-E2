@@ -1,7 +1,7 @@
 import random
 
 def verifier_tableau():
-    n = random.randint(3, 99)
+    n = random.randint(2, 100)
     tableau = [random.randint(0, 500) for _ in range(n)]
     print(f"Tableau généré ({n} éléments) :", tableau)
     if len(tableau) == len(set(tableau)):
