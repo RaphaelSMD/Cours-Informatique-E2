@@ -2,8 +2,9 @@ class Product :
     code = 1234
     name = "Simon"
     priceET = 12
+    tax = 0.2
     def get_price_it(self):
-        return self.priceET + (0.2 * self.priceET)
+        return self.priceET + (self.tax * self.priceET)
 print(Product().get_price_it())
 
 import random
