@@ -1,6 +1,5 @@
-# pip install colorama, termcolor
 
-from Card import Card, Deck
+from exo3 import Card, Deck
 from termcolor import colored, cprint
 
 c = Card(4, "4", "♠", "spade", "black")
