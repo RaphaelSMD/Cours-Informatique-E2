@@ -1,0 +1,5 @@
+taille=float(input("Saisissez la taille de la personne en m : "))
+poids=float(input("Indiquez le poids de la personne en kg : "))
+IMC = poids / (taille * taille)
+print(IMC)
+print(round(IMC))
